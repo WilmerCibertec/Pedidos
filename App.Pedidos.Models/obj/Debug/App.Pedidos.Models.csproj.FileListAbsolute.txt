@@ -1,0 +1,11 @@
+E:\Web\Proyecto\Pedidos\App.Pedidos.Models\obj\Debug\App.Pedidos.Models.csproj.CoreCompileInputs.cache
+E:\Web\Proyecto\Pedidos\App.Pedidos.Models\bin\Debug\App.Pedidos.Models.dll
+E:\Web\Proyecto\Pedidos\App.Pedidos.Models\bin\Debug\App.Pedidos.Models.pdb
+E:\Web\Proyecto\Pedidos\App.Pedidos.Models\bin\Debug\Dapper.Contrib.dll
+E:\Web\Proyecto\Pedidos\App.Pedidos.Models\bin\Debug\Dapper.dll
+E:\Web\Proyecto\Pedidos\App.Pedidos.Models\bin\Debug\Dapper.xml
+E:\Web\Proyecto\Pedidos\App.Pedidos.Models\bin\Debug\Dapper.Contrib.xml
+E:\Web\Proyecto\Pedidos\App.Pedidos.Models\obj\Debug\App.Pedidos.Models.csproj.CopyComplete
+E:\Web\Proyecto\Pedidos\App.Pedidos.Models\obj\Debug\App.Pedidos.Models.dll
+E:\Web\Proyecto\Pedidos\App.Pedidos.Models\obj\Debug\App.Pedidos.Models.pdb
+E:\Web\Proyecto\Pedidos\App.Pedidos.Models\obj\Debug\App.Pedidos.Models.csproj.AssemblyReference.cache
