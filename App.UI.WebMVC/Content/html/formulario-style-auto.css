@@ -1,0 +1,18 @@
+﻿@charset "UTF-8";
+/*Definiciones de colores de toda la página*/
+body {
+  padding: 30px;
+  background-color: #758c92; }
+
+form section {
+  margin: 15px; }
+  form section label {
+    color: #0f568a;
+    font-weight: bold;
+    display: inline-block;
+    width: 170px;
+    text-align: right; }
+  form section input, form section form select {
+    padding: 5px;
+    border-width: 2px;
+    border-radius: 15px; }

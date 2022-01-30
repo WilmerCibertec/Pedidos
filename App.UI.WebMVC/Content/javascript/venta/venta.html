@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>s
+    <script src="modelo/producto.js"></script>
+    <script src="ventalib.js"></script>
+
+    <link href="../../html/formulario-style-auto.css" rel="stylesheet" />
+</head>
+<body>
+    <form>
+        <section>
+            <label for="producto">Producto</label>
+            <select name="producto" id="producto">
+                <option value="01">Computadora DELL 123</option>
+                <option value="02">Mouse option LG</option>
+                <option value="03">Teclado Microsofr 636</option>
+                <option value="04">Monitor Sony 122</option>
+                <option value="05">CPU Gamer 1333</option>s
+            </select>
+        </section>
+        <section>
+            <label for="precio">Precio:</label>
+            <input type="number" name="precio" id="precio" />
+        </section>
+        <section>
+            <label for="cantidad">Cantidad:</label>
+            <input type="number" name="cantidad" id="cantidad" />
+        </section>
+        <section>
+            <button type="button" onclick="AgregarProducto()" >Agregar</button>
+        </section>
+    </form>
+    <div id="detalle">
+
+    </div>
+    <section>
+        <button type="button" onclick="ConfirmarVenta()">Confirmar venta</button>
+    </section>
+
+    <script>
+        MostrarVentaHtml('detalle');
+    </script>
+</body>
+</html>

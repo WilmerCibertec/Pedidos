@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="formulario-style-auto.css" rel="stylesheet" />
+</head>
+<body>
+    <form>
+        <section>
+            <label for="Nombres">Input text:</label>
+            <input type="text" name="Nombres" id="Nombres" />
+        </section>
+        <section>
+            <label for="Edad">Edad:</label>
+            <input type="number" name="Edad" id="Edad" />
+        </section>
+        <section>
+            <label>Input radio:</label>
+            <label for="ecSoltero">Soltero:</label><input id="ecSoltero" type="radio" name="estadocivil" value="10" />
+            <label for="ecCasado">Casado:</label><input id="ecCasado" type="radio" name="estadocivil" value="20" checked />
+            <label for="ecDivorciado">Divorciado:</label><input id="ecDivorciado" type="radio" name="estadocivil" value="30" />
+        </section>
+        <section>
+            <label for="RecibirCorreo">Input checkbox:</label>
+            <input type="checkbox" id="RecibirCorreo" name="RecibirCorreo" checked />
+        </section>
+        <section>
+            <label for="HerramientaPreferida">Combos:</label>
+            <select id="HerramientaPreferida" name="HerramientaPreferida">
+                <option value="0">Seleccionar un valor</option>
+                <option value="15">Visual Studio 2019</option>
+                <option value="16" selected>Visual Studo Code</option>
+                <option value="17">Eclipse</option>
+            </select>
+        </section>
+        <section>
+            <label for="ClaveUsuario">Input password:</label>
+            <input type="password" name="ClaveUsuario" id="ClaveUsuario" />
+        </section>
+        <section>
+            <label for="Observaciones">Area:</label>
+            <textarea rows="10" cols="40" name="Observaciones" id``="Observaciones"></textarea>
+        </section>
+        <section>
+            <button type="submit">Enviar información</button>
+            <button type="reset">Nuevo</button>
+        </section>
+    </form>
+</body>
+</html>

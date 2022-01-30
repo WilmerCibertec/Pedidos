@@ -1,0 +1,21 @@
+﻿body{
+    padding:30px;
+}
+
+form section{
+    margin: 15px;
+}
+
+form label{
+    color: #0f568a;
+    font-weight:bold;
+    display: inline-block;
+    width:170px;
+    text-align:right;
+}
+
+form input, form select{
+    padding:5px;
+    border-width:1px;
+    border-radius:10px;
+}

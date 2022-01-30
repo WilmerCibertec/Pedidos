@@ -1,0 +1,15 @@
+E:\Web\Proyecto\Pedidos\App.Pedidos.Repositories.Dapper\obj\Debug\App.Pedidos.Repositories.Dapper.csproj.CoreCompileInputs.cache
+E:\Web\Proyecto\Pedidos\App.Pedidos.Repositories.Dapper\bin\Debug\App.Pedidos.Repositories.Dapper.dll
+E:\Web\Proyecto\Pedidos\App.Pedidos.Repositories.Dapper\bin\Debug\App.Pedidos.Repositories.Dapper.pdb
+E:\Web\Proyecto\Pedidos\App.Pedidos.Repositories.Dapper\bin\Debug\App.Pedidos.Models.dll
+E:\Web\Proyecto\Pedidos\App.Pedidos.Repositories.Dapper\bin\Debug\App.Pedidos.Repositories.dll
+E:\Web\Proyecto\Pedidos\App.Pedidos.Repositories.Dapper\bin\Debug\Dapper.Contrib.dll
+E:\Web\Proyecto\Pedidos\App.Pedidos.Repositories.Dapper\bin\Debug\Dapper.dll
+E:\Web\Proyecto\Pedidos\App.Pedidos.Repositories.Dapper\bin\Debug\App.Pedidos.Models.pdb
+E:\Web\Proyecto\Pedidos\App.Pedidos.Repositories.Dapper\bin\Debug\App.Pedidos.Repositories.pdb
+E:\Web\Proyecto\Pedidos\App.Pedidos.Repositories.Dapper\bin\Debug\Dapper.xml
+E:\Web\Proyecto\Pedidos\App.Pedidos.Repositories.Dapper\bin\Debug\Dapper.Contrib.xml
+E:\Web\Proyecto\Pedidos\App.Pedidos.Repositories.Dapper\obj\Debug\App.Pedidos.Repositories.Dapper.csproj.AssemblyReference.cache
+E:\Web\Proyecto\Pedidos\App.Pedidos.Repositories.Dapper\obj\Debug\App.Pedidos.Repositories.Dapper.csproj.CopyComplete
+E:\Web\Proyecto\Pedidos\App.Pedidos.Repositories.Dapper\obj\Debug\App.Pedidos.Repositories.Dapper.dll
+E:\Web\Proyecto\Pedidos\App.Pedidos.Repositories.Dapper\obj\Debug\App.Pedidos.Repositories.Dapper.pdb
