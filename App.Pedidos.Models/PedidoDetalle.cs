@@ -1,5 +1,4 @@
-﻿using Dapper.Contrib.Extensions;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
@@ -10,10 +9,10 @@ namespace App.Pedidos.Models
 {
     public class PedidoDetalle
     {
-        [Key]
-        [DisplayName("Codigo Pedido")]
+        //[Key]
+        //[DisplayName("Codigo Pedido")]
         public int IdPedido { get; set; }
-        [DisplayName("Item Codigo")]
+        //[DisplayName("Item Codigo")]
         public int Item { get; set; }
         public decimal Cantidad { get; set; }
         public decimal Total { get; set; }

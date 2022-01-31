@@ -7,10 +7,10 @@ using System.Threading.Tasks;
 
 namespace App.Pedidos.Repositories
 {
-    public interface ILineaRepository:IRepository<Linea>
+    public interface ILineaRepository:IRepository<WH_ClaseLinea>
     {
-        Linea BuscarPorId(int id);
-        Task<IEnumerable<Linea>> Listar(string Descripcion);
+        WH_ClaseLinea BuscarPorId(int id);
+        Task<IEnumerable<WH_ClaseLinea>> Listar(string Descripcion);
         Task<int> Eliminar(int id);
     }
 }

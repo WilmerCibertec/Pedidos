@@ -1,5 +1,4 @@
-﻿using Dapper.Contrib.Extensions;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
@@ -8,22 +7,22 @@ using System.Threading.Tasks;
 
 namespace App.Pedidos.Models
 {
-    [Table("ItemMast")]
+    //[Table("ItemMast")]
     public class Producto
     {
-        [Key]
+        //[Key]
         public int Item { get; set; }
 
-        [ExplicitKey]
+        //[ExplicitKey]
         public int Linea { get; set; }
 
-        [ExplicitKey]
+        //[ExplicitKey]
         public int Familia { get; set; }
 
-        [ExplicitKey]
+        //[ExplicitKey]
         public int SubFamilia { get; set; }
 
-        [DisplayName("Descripcion")]
+        //[DisplayName("Descripcion")]
         public string DescripcionLocal { get; set; }
 
         public string UnidadCodigo { get; set; }

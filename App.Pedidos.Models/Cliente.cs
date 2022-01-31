@@ -1,5 +1,4 @@
-﻿using Dapper.Contrib.Extensions;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
@@ -8,12 +7,12 @@ using System.Threading.Tasks;
 
 namespace App.Pedidos.Models
 {
-    [Table("Clientes")]
+    //[Table("Clientes")]
     public class Cliente
     {
-        [Key]
-        [DisplayName("Id")]
-        public int IdPersona { get; set; }
+        //[Key]
+        //[DisplayName("Id")]
+        public int Id { get; set; }
 
         public string Nombres { get; set; }
 
@@ -27,10 +26,10 @@ namespace App.Pedidos.Models
         public string Telefono { get; set; }
         public bool Estado { get; set; }
 
-        [DisplayName("Fecha Creacion")]
+        //[DisplayName("Fecha Creacion")]
         public DateTime? FechaCreacion { get; set; }
 
-        [DisplayName("Fecha Actualizacion")]
+        //[DisplayName("Fecha Actualizacion")]
         public DateTime? FechaActualizacion { get; set; }
 
     }

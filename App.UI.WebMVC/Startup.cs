@@ -6,22 +6,21 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-[assembly: OwinStartup(typeof(App.UI.WebMVC.Startup))]
+[assembly:OwinStartup(typeof(App.UI.WebMVC.Startup))]
 
 namespace App.UI.WebMVC
 {
-
     public class Startup
     {
         public void Configuration(IAppBuilder app)
         {
-            //app.UseCookieAuthentication(new CookieAuthenticationOptions
-            //{
-            //    AuthenticationType = "ApplicationCookie",
-            //    LoginPath = new PathString("/Shared/_LayoutBackOffice.cshtml"),
-            //    ExpireTimeSpan = TimeSpan.FromDays(30)/*,
-            //    LogoutPath = new PathString("Home/Index")*/
-            //});
+            app.UseCookieAuthentication(new CookieAuthenticationOptions
+            {
+                AuthenticationType = "ApplicationCookie",
+                //LoginPath = new PathString("/Shared/_LayoutBackOffice.cshtml"),
+                //ExpireTimeSpan = TimeSpan.FromDays(30)/*,
+                //LogoutPath = new PathString("Home/Index")
+            });
         }
     }
 }

@@ -9,3 +9,9 @@ E:\Web\Proyecto\Pedidos\App.Pedidos.Models\obj\Debug\App.Pedidos.Models.csproj.C
 E:\Web\Proyecto\Pedidos\App.Pedidos.Models\obj\Debug\App.Pedidos.Models.dll
 E:\Web\Proyecto\Pedidos\App.Pedidos.Models\obj\Debug\App.Pedidos.Models.pdb
 E:\Web\Proyecto\Pedidos\App.Pedidos.Models\obj\Debug\App.Pedidos.Models.csproj.AssemblyReference.cache
+E:\Web\Pedidos\App.Pedidos.Models\bin\Debug\App.Pedidos.Models.dll
+E:\Web\Pedidos\App.Pedidos.Models\bin\Debug\App.Pedidos.Models.pdb
+E:\Web\Pedidos\App.Pedidos.Models\obj\Debug\App.Pedidos.Models.csproj.CoreCompileInputs.cache
+E:\Web\Pedidos\App.Pedidos.Models\obj\Debug\App.Pedidos.Models.dll
+E:\Web\Pedidos\App.Pedidos.Models\obj\Debug\App.Pedidos.Models.pdb
+E:\Web\Pedidos\App.Pedidos.Models\obj\Debug\App.Pedidos.Models.csproj.AssemblyReference.cache

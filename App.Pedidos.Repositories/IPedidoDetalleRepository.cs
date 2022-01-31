@@ -9,8 +9,8 @@ namespace App.Pedidos.Repositories
 {
     public interface IPedidoDetalleRepository:IRepository<PedidoDetalle>
     {
-        Linea BuscarPorId(int id);
-        Task<IEnumerable<Linea>> Listar(string Descripcion);
+        WH_ClaseLinea BuscarPorId(int id);
+        Task<IEnumerable<WH_ClaseLinea>> Listar(string Descripcion);
         Task<int> Eliminar(int id);
     }
 }

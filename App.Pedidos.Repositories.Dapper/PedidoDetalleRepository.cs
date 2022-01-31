@@ -13,7 +13,7 @@ namespace App.Pedidos.Repositories.Dapper
         {
         }
 
-        public Linea BuscarPorId(int id)
+        public WH_ClaseLinea BuscarPorId(int id)
         {
             throw new NotImplementedException();
         }
@@ -23,7 +23,7 @@ namespace App.Pedidos.Repositories.Dapper
             throw new NotImplementedException();
         }
 
-        public Task<IEnumerable<Linea>> Listar(string Descripcion)
+        public Task<IEnumerable<WH_ClaseLinea>> Listar(string Descripcion)
         {
             throw new NotImplementedException();
         }

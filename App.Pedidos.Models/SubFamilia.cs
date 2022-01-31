@@ -1,5 +1,4 @@
-﻿using Dapper.Contrib.Extensions;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
@@ -8,22 +7,22 @@ using System.Threading.Tasks;
 
 namespace App.Pedidos.Models
 {
-    [Table("ClaseSubFamilia")]
+    //[Table("ClaseSubFamilia")]
     public class SubFamilia
     {
-        [ExplicitKey]
-        [DisplayName("Linea")]
+        //[ExplicitKey]
+        //[DisplayName("Linea")]
         public int IdLinea { get; set; }
 
-        [ExplicitKey]
-        [DisplayName("Familia")]
+        //[ExplicitKey]
+        //[DisplayName("Familia")]
         public int IdFamilia { get; set; }
 
-        [ExplicitKey]
-        [DisplayName("SubFamilia")]
+        //[ExplicitKey]
+        //[DisplayName("SubFamilia")]
         public int IdSubFamilia { get; set; }
         
-        [DisplayName("Descripcion")]
+        //[DisplayName("Descripcion")]
         public string DescripcionLocal { get; set; }
         public bool? Estado { get; set; }
 
