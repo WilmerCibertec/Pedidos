@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace App.Pedidos.Models
 {
-    public class Pedido
+    public class CO_Pedido
     {
         //[Key]
         //[DisplayName("Codigo Pedido")]

@@ -10,17 +10,17 @@ using System.Threading.Tasks;
 
 namespace App.Pedidos.Repositories.Dapper
 {
-    public class ClienteRepository:Repository<Cliente>,IClienteRepository
+    public class ClienteRepository:Repository<CO_Clientes>,IClienteRepository
     {
         public ClienteRepository(string connectionString) : base(connectionString)
         {
         }
 
-        public Cliente BuscarPorId(int id)
+        public CO_Clientes BuscarPorId(int id)
         {
             using (var connection = new SqlConnection(_connectionString))
             {
-                return connection.GetAll<Cliente>().Where(c => c.Id.Equals(id)).First();
+                return connection.GetAll<CO_Clientes>().Where(c => c.Id.Equals(id)).First();
             }
         }
 
@@ -37,13 +37,13 @@ namespace App.Pedidos.Repositories.Dapper
             }
         }
 
-        public Task<IEnumerable<Cliente>> Listar(string nombre)
+        public Task<IEnumerable<CO_Clientes>> Listar(string nombre)
         {
             using (var connection = new SqlConnection(_connectionString))
             {
                 var parameters = new DynamicParameters();
                 parameters.Add("@Nombres", nombre);
-                return connection.QueryAsync<Cliente>("dbo.usp_ListarClientes", parameters,commandType: System.Data.CommandType.StoredProcedure);
+                return connection.QueryAsync<CO_Clientes>("dbo.usp_ListarClientes", parameters,commandType: System.Data.CommandType.StoredProcedure);
             }
         }
     }

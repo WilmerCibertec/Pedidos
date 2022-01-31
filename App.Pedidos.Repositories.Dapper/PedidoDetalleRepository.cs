@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace App.Pedidos.Repositories.Dapper
 {
-    public class PedidoDetalleRepository:Repository<PedidoDetalle>,IPedidoDetalleRepository
+    public class PedidoDetalleRepository:Repository<CO_PedidoDetalle>,IPedidoDetalleRepository
     {
         public PedidoDetalleRepository(string connectionString) : base(connectionString)
         {

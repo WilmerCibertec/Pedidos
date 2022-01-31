@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace App.Pedidos.Models
 {
     //[Table("ItemMast")]
-    public class Producto
+    public class WH_ItemMast
     {
         //[Key]
         public int Item { get; set; }

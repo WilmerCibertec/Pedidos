@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace App.Pedidos.Repositories.Dapper
 {
-    public class RolRepository:Repository<Rol>
+    public class RolRepository:Repository<RH_Rol>
     {
         public RolRepository(string connectionString) : base(connectionString)
         {

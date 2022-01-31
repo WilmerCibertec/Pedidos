@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace App.Pedidos.Repositories
 {
-    public interface IPedidoDetalleRepository:IRepository<PedidoDetalle>
+    public interface IPedidoDetalleRepository:IRepository<CO_PedidoDetalle>
     {
         WH_ClaseLinea BuscarPorId(int id);
         Task<IEnumerable<WH_ClaseLinea>> Listar(string Descripcion);

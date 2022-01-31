@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace App.Pedidos.Models
 {
-    public class Usuario
+    public class WB_Usuario
     {
         //[Key]
         //[DisplayName("Codigo Usuario")]

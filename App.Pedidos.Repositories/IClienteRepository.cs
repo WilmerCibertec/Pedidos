@@ -7,10 +7,10 @@ using System.Threading.Tasks;
 
 namespace App.Pedidos.Repositories
 {
-    public interface IClienteRepository:IRepository<Cliente>
+    public interface IClienteRepository:IRepository<CO_Clientes>
     {
-        Cliente BuscarPorId(int id);
-        Task<IEnumerable<Cliente>> Listar(string nombre);
+        CO_Clientes BuscarPorId(int id);
+        Task<IEnumerable<CO_Clientes>> Listar(string nombre);
         Task<int> Eliminar(int id);
     }
 }

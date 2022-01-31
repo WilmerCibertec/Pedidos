@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace App.Pedidos.Models
 {
-    public class Rol
+    public class RH_Rol
     {
         //PENDIENTE
     }

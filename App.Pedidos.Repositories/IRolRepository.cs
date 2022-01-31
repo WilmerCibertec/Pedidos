@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace App.Pedidos.Repositories
 {
-    public interface IRolRepository:IRepository<Rol>
+    public interface IRolRepository:IRepository<RH_Rol>
     {
         //PENDIENTE
     }

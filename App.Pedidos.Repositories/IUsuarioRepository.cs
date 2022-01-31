@@ -7,10 +7,10 @@ using System.Threading.Tasks;
 
 namespace App.Pedidos.Repositories
 {
-    public interface IUsuarioRepository:IRepository<Usuario>
+    public interface IUsuarioRepository:IRepository<WB_Usuario>
     {
-        Usuario BuscarPorId(int id);
-        Task<IEnumerable<Usuario>> Listar(string nombres);
+        WB_Usuario BuscarPorId(int id);
+        Task<IEnumerable<WB_Usuario>> Listar(string nombres);
         Task<int> Eliminar(int id);
     }
 }

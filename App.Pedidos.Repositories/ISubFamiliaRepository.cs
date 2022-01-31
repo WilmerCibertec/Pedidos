@@ -7,10 +7,10 @@ using System.Threading.Tasks;
 
 namespace App.Pedidos.Repositories
 {
-    public interface ISubFamiliaRepository:IRepository<SubFamilia>
+    public interface ISubFamiliaRepository:IRepository<WH_ClaseSubFamilia>
     {
-        SubFamilia BuscarPorId(int id);
-        Task<IEnumerable<SubFamilia>> Listar(string Descripcion);
+        WH_ClaseSubFamilia BuscarPorId(int id);
+        Task<IEnumerable<WH_ClaseSubFamilia>> Listar(string Descripcion);
         Task<int> Eliminar(int id);
     }
 }

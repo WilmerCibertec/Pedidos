@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace App.Pedidos.Models
 {
     //[Table("ClaseSubFamilia")]
-    public class SubFamilia
+    public class WH_ClaseSubFamilia
     {
         //[ExplicitKey]
         //[DisplayName("Linea")]

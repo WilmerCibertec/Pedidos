@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace App.Pedidos.Models
 {
     //[Table("Tiendas")]
-    public class Tienda
+    public class CO_Tiendas
     {
         //[ExplicitKey]
         //[DisplayName("Codigo Pedido")]

@@ -7,13 +7,13 @@ using System.Threading.Tasks;
 
 namespace App.Pedidos.Repositories.Dapper
 {
-    public class SubFamiliaRepository:Repository<SubFamilia>,ISubFamiliaRepository
+    public class SubFamiliaRepository:Repository<WH_ClaseSubFamilia>,ISubFamiliaRepository
     {
         public SubFamiliaRepository(string connectionString) : base(connectionString)
         {
         }
 
-        public SubFamilia BuscarPorId(int id)
+        public WH_ClaseSubFamilia BuscarPorId(int id)
         {
             throw new NotImplementedException();
         }
@@ -23,7 +23,7 @@ namespace App.Pedidos.Repositories.Dapper
             throw new NotImplementedException();
         }
 
-        public Task<IEnumerable<SubFamilia>> Listar(string Descripcion)
+        public Task<IEnumerable<WH_ClaseSubFamilia>> Listar(string Descripcion)
         {
             throw new NotImplementedException();
         }
