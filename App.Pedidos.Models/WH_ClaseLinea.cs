@@ -1,7 +1,7 @@
-﻿//using Dapper.Contrib.Extensions;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
@@ -11,11 +11,11 @@ namespace App.Pedidos.Models
 {
     public class WH_ClaseLinea
     {
-        //[Key]
-        //[DisplayName("Codigo")]
+        [Key]
+        [DisplayName("Codigo")]
         public int Id { get; set; }
 
-        //[DisplayName("Nombre Linea")]
+        [DisplayName("Descripcion")]
         public string DescripcionLocal { get; set; }
 
         public bool? Estado { get; set; }

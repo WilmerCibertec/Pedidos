@@ -6,34 +6,28 @@
 
 <h2>Index</h2>
 
+<!--COMENTARIO CON HTML NATIVO-->
+@*COMENTARIO CON RAZOR*@
+
+@Messages.Message("createMessage", "New", "success", "El registro se creó satisfactoriamente")
+@Messages.Message("deleteMessage", "Delete", "danger", "El registro se eliminó satisfactoriamente")
+@Messages.Message("editMessage", "Edit", "primary", "El registro se editó satisfactoriamente")
+
 <p>
-    @Html.ActionLink("Create New", "Create")
+    <a href="#" onclick="appVentas.getModal('@Url.Action("Create")');" data-toggle="modal"
+       data-target="#modal-container" class="btn btn-success">
+        <span class="fa fa-plus"></span> Crear Categoria
+    </a>
 </p>
-<table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.DescripcionLocal)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Estado)
-        </th>
-        <th></th>
-    </tr>
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.DescripcionLocal)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Estado)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
-            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
-        </td>
-    </tr>
-}
+@Html.Partial("_List")
 
-</table>
+@Modal.GetModal("Mantenimiento de Categoria")
+
+<!--Data Table-->
+<script src="~/Content/templates/default/vendor/datatables/jquery.dataTables.js"></script>
+<script src="~/Content/templates/default/vendor/datatables/dataTables.bootstrap4.js"></script>
+
+
+<script src="~/App_JS/appVentas.js" type="text/javascript"></script>
+<script src="~/App_JS/categoria.js" type="text/javascript"></script>
