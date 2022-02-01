@@ -12,12 +12,15 @@ namespace App.Pedidos.Models
     public class WH_ClaseLinea
     {
         [Key]
-        [DisplayName("Codigo")]
+        [DisplayName("CODIGO")]
         public int Id { get; set; }
 
-        [DisplayName("Descripcion")]
+        [DisplayName("DESCRIPCION")]
+        [Required(ErrorMessage = "Ingresar Valor")]
+        [DataType(DataType.Text, ErrorMessage = "Ingresar texto")]
         public string DescripcionLocal { get; set; }
 
+        [DisplayName("ESTADO")]
         public bool? Estado { get; set; }
     }
 }

@@ -14,20 +14,20 @@
 @Messages.Message("editMessage", "Edit", "primary", "El registro se editó satisfactoriamente")
 
 <p>
-    <a href="#" onclick="appVentas.getModal('@Url.Action("Create")');" data-toggle="modal"
+    <a href="#" onclick="appPedidos.getModal('@Url.Action("Create")');" data-toggle="modal"
        data-target="#modal-container" class="btn btn-success">
-        <span class="fa fa-plus"></span> Crear Categoria
+        <span class="fa fa-plus"></span> Crear Linea
     </a>
 </p>
 
 @Html.Partial("_List")
 
-@Modal.GetModal("Mantenimiento de Categoria")
+@Modal.GetModal("Mantenimiento de Linea")
 
 <!--Data Table-->
 <script src="~/Content/templates/default/vendor/datatables/jquery.dataTables.js"></script>
 <script src="~/Content/templates/default/vendor/datatables/dataTables.bootstrap4.js"></script>
 
 
-<script src="~/App_JS/appVentas.js" type="text/javascript"></script>
-<script src="~/App_JS/categoria.js" type="text/javascript"></script>
+<script src="~/App_JS/appPedidos.js" type="text/javascript"></script>
+<script src="~/App_JS/linea.js" type="text/javascript"></script>

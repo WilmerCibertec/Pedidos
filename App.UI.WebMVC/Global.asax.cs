@@ -21,8 +21,8 @@ namespace App.UI.WebMVC
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
 
-            //AntiForgeryConfig.UniqueClaimTypeIdentifier = ClaimTypes.NameIdentifier;
-            //log4net.Config.XmlConfigurator.Configure();
+            AntiForgeryConfig.UniqueClaimTypeIdentifier = ClaimTypes.NameIdentifier;
+            log4net.Config.XmlConfigurator.Configure();
         }
     }
 }

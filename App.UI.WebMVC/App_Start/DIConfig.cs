@@ -26,8 +26,8 @@ namespace App.UI.WebMVC.App_Start
 
             container.RegisterMvcControllers(Assembly.GetExecutingAssembly());
 
-            //container.RegisterConditional(typeof(ILog), c => typeof(Log4NetAdapter<>).MakeGenericType(
-            //    c.Consumer.ImplementationType), Lifestyle.Singleton, c => true);
+            container.RegisterConditional(typeof(ILog), c => typeof(Log4NetAdapter<>).MakeGenericType(
+                c.Consumer.ImplementationType), Lifestyle.Singleton, c => true);
 
 
             container.Verify();
@@ -35,8 +35,8 @@ namespace App.UI.WebMVC.App_Start
             DependencyResolver.SetResolver(new SimpleInjectorDependencyResolver(container));
         }
     }
-    //public sealed class Log4NetAdapter<T> : LogImpl
-    //{
-    //    public Log4NetAdapter() : base(LogManager.GetLogger(typeof(T)).Logger) { }
-    //}
+    public sealed class Log4NetAdapter<T> : LogImpl
+    {
+        public Log4NetAdapter() : base(LogManager.GetLogger(typeof(T)).Logger) { }
+    }
 }
