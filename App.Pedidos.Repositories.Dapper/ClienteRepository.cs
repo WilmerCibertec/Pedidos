@@ -20,7 +20,7 @@ namespace App.Pedidos.Repositories.Dapper
         {
             using (var connection = new SqlConnection(_connectionString))
             {
-                return connection.GetAll<CO_Clientes>().Where(c => c.Id.Equals(id)).First();
+                return connection.GetAll<CO_Clientes>().Where(c => c.IdPersona.Equals(id)).First();
             }
         }
 

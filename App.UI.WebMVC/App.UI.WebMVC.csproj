@@ -157,6 +157,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\DIConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\ClienteController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LineaController.cs" />
     <Compile Include="Global.asax.cs">
@@ -167,6 +168,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_JS\appPedidos.js" />
+    <Content Include="App_JS\cliente.js" />
     <Content Include="App_JS\linea.js" />
     <Content Include="Content\appjs\modelos\producto.js" />
     <Content Include="Content\appjs\paginas\venta\ventalib.js" />
@@ -2180,12 +2182,18 @@
     <Content Include="Scripts\umd\popper.min.js.map" />
     <Content Include="Views\Linea\Index.cshtml" />
     <Content Include="Views\Linea\_List.cshtml" />
+    <Content Include="Views\Cliente\Index.cshtml" />
+    <Content Include="Views\Cliente\Create.cshtml" />
+    <Content Include="Views\Cliente\Edit.cshtml" />
+    <Content Include="Views\Cliente\Delete.cshtml" />
+    <Content Include="Views\Cliente\Details.cshtml" />
+    <Content Include="Views\Cliente\_List.cshtml" />
+    <Content Include="Views\Cliente\_Create.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
     <Folder Include="Views\Base\" />
-    <Folder Include="Views\Cliente\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.min.css.map" />

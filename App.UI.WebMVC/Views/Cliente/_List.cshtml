@@ -1,0 +1,96 @@
+﻿@model IEnumerable<App.Pedidos.Models.CO_Clientes>
+
+<div class="table-responsive">
+    <table id="clienteTable" class="table table-striped table-hover table-bordered">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Nombres)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Apellidos)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Documento)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Direccion)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Distrito)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Provincia)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Telefono)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Estado)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.FechaCreacion)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.FechaActualizacion)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.IdPersona)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Nombres)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Apellidos)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Documento)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Direccion)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Distrito)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Provincia)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Telefono)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Estado)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.FechaCreacion)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.FechaActualizacion)
+                    </td>
+                    <td>
+                        <a href="#" onclick="appPedidos.getModal('@Url.Action("Edit", new { id = item.IdPersona })');" data-toggle="modal"
+                           data-target="#modal-container" class="btn btn-warning">
+                            <span class="fa fa-edit"></span>
+                        </a>
+                        <a href="#" onclick="appPedidos.getModal('@Url.Action("Details", new { id = item.IdPersona })');" data-toggle="modal"
+                           data-target="#modal-container" class="btn btn-warning">
+                            <span class="fa fa-edit"></span>
+                        </a>
+                        <a href="#" onclick="appPedidos.getModal('@Url.Action("Delete", new { id = item.IdPersona })');" data-toggle="modal"
+                           data-target="#modal-container" class="btn btn-warning">
+                            <span class="fa fa-edit"></span>
+                        </a>
+                        
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

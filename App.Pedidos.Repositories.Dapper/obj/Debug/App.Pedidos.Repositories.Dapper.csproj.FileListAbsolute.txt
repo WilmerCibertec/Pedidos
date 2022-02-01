@@ -52,3 +52,42 @@ E:\Web\Pedidos\App.Pedidos.Repositories.Dapper\obj\Debug\App.Pedidos.Repositorie
 E:\Web\Pedidos\App.Pedidos.Repositories.Dapper\obj\Debug\App.Pedidos.Repositories.Dapper.csproj.CopyComplete
 E:\Web\Pedidos\App.Pedidos.Repositories.Dapper\obj\Debug\App.Pedidos.Repositories.Dapper.dll
 E:\Web\Pedidos\App.Pedidos.Repositories.Dapper\obj\Debug\App.Pedidos.Repositories.Dapper.pdb
+C:\Users\jgutierrez\Documents\Estudios\Cibertec\proyecto final\Pedidos\App.Pedidos.Repositories.Dapper\bin\Debug\App.Pedidos.Repositories.Dapper.dll.config
+C:\Users\jgutierrez\Documents\Estudios\Cibertec\proyecto final\Pedidos\App.Pedidos.Repositories.Dapper\bin\Debug\App.Pedidos.Repositories.Dapper.dll
+C:\Users\jgutierrez\Documents\Estudios\Cibertec\proyecto final\Pedidos\App.Pedidos.Repositories.Dapper\bin\Debug\App.Pedidos.Repositories.Dapper.pdb
+C:\Users\jgutierrez\Documents\Estudios\Cibertec\proyecto final\Pedidos\App.Pedidos.Repositories.Dapper\bin\Debug\App.Pedidos.Models.dll
+C:\Users\jgutierrez\Documents\Estudios\Cibertec\proyecto final\Pedidos\App.Pedidos.Repositories.Dapper\bin\Debug\App.Pedidos.Repositories.dll
+C:\Users\jgutierrez\Documents\Estudios\Cibertec\proyecto final\Pedidos\App.Pedidos.Repositories.Dapper\bin\Debug\Dapper.Contrib.dll
+C:\Users\jgutierrez\Documents\Estudios\Cibertec\proyecto final\Pedidos\App.Pedidos.Repositories.Dapper\bin\Debug\Dapper.dll
+C:\Users\jgutierrez\Documents\Estudios\Cibertec\proyecto final\Pedidos\App.Pedidos.Repositories.Dapper\bin\Debug\DapperExtensions.dll
+C:\Users\jgutierrez\Documents\Estudios\Cibertec\proyecto final\Pedidos\App.Pedidos.Repositories.Dapper\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\jgutierrez\Documents\Estudios\Cibertec\proyecto final\Pedidos\App.Pedidos.Repositories.Dapper\bin\Debug\Newtonsoft.Json.dll
+C:\Users\jgutierrez\Documents\Estudios\Cibertec\proyecto final\Pedidos\App.Pedidos.Repositories.Dapper\bin\Debug\Oracle.ManagedDataAccess.dll
+C:\Users\jgutierrez\Documents\Estudios\Cibertec\proyecto final\Pedidos\App.Pedidos.Repositories.Dapper\bin\Debug\Slapper.dll
+C:\Users\jgutierrez\Documents\Estudios\Cibertec\proyecto final\Pedidos\App.Pedidos.Repositories.Dapper\bin\Debug\System.Buffers.dll
+C:\Users\jgutierrez\Documents\Estudios\Cibertec\proyecto final\Pedidos\App.Pedidos.Repositories.Dapper\bin\Debug\System.Memory.dll
+C:\Users\jgutierrez\Documents\Estudios\Cibertec\proyecto final\Pedidos\App.Pedidos.Repositories.Dapper\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\jgutierrez\Documents\Estudios\Cibertec\proyecto final\Pedidos\App.Pedidos.Repositories.Dapper\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\jgutierrez\Documents\Estudios\Cibertec\proyecto final\Pedidos\App.Pedidos.Repositories.Dapper\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\jgutierrez\Documents\Estudios\Cibertec\proyecto final\Pedidos\App.Pedidos.Repositories.Dapper\bin\Debug\System.Text.Json.dll
+C:\Users\jgutierrez\Documents\Estudios\Cibertec\proyecto final\Pedidos\App.Pedidos.Repositories.Dapper\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\jgutierrez\Documents\Estudios\Cibertec\proyecto final\Pedidos\App.Pedidos.Repositories.Dapper\bin\Debug\System.ValueTuple.dll
+C:\Users\jgutierrez\Documents\Estudios\Cibertec\proyecto final\Pedidos\App.Pedidos.Repositories.Dapper\bin\Debug\App.Pedidos.Models.pdb
+C:\Users\jgutierrez\Documents\Estudios\Cibertec\proyecto final\Pedidos\App.Pedidos.Repositories.Dapper\bin\Debug\App.Pedidos.Repositories.pdb
+C:\Users\jgutierrez\Documents\Estudios\Cibertec\proyecto final\Pedidos\App.Pedidos.Repositories.Dapper\bin\Debug\Dapper.xml
+C:\Users\jgutierrez\Documents\Estudios\Cibertec\proyecto final\Pedidos\App.Pedidos.Repositories.Dapper\bin\Debug\Dapper.Contrib.xml
+C:\Users\jgutierrez\Documents\Estudios\Cibertec\proyecto final\Pedidos\App.Pedidos.Repositories.Dapper\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\jgutierrez\Documents\Estudios\Cibertec\proyecto final\Pedidos\App.Pedidos.Repositories.Dapper\bin\Debug\Newtonsoft.Json.xml
+C:\Users\jgutierrez\Documents\Estudios\Cibertec\proyecto final\Pedidos\App.Pedidos.Repositories.Dapper\bin\Debug\System.Buffers.xml
+C:\Users\jgutierrez\Documents\Estudios\Cibertec\proyecto final\Pedidos\App.Pedidos.Repositories.Dapper\bin\Debug\System.Memory.xml
+C:\Users\jgutierrez\Documents\Estudios\Cibertec\proyecto final\Pedidos\App.Pedidos.Repositories.Dapper\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\jgutierrez\Documents\Estudios\Cibertec\proyecto final\Pedidos\App.Pedidos.Repositories.Dapper\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\jgutierrez\Documents\Estudios\Cibertec\proyecto final\Pedidos\App.Pedidos.Repositories.Dapper\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\jgutierrez\Documents\Estudios\Cibertec\proyecto final\Pedidos\App.Pedidos.Repositories.Dapper\bin\Debug\System.Text.Json.xml
+C:\Users\jgutierrez\Documents\Estudios\Cibertec\proyecto final\Pedidos\App.Pedidos.Repositories.Dapper\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\jgutierrez\Documents\Estudios\Cibertec\proyecto final\Pedidos\App.Pedidos.Repositories.Dapper\bin\Debug\System.ValueTuple.xml
+C:\Users\jgutierrez\Documents\Estudios\Cibertec\proyecto final\Pedidos\App.Pedidos.Repositories.Dapper\obj\Debug\App.Pedidos.Repositories.Dapper.csprojAssemblyReference.cache
+C:\Users\jgutierrez\Documents\Estudios\Cibertec\proyecto final\Pedidos\App.Pedidos.Repositories.Dapper\obj\Debug\App.Pedidos.Repositories.Dapper.csproj.CoreCompileInputs.cache
+C:\Users\jgutierrez\Documents\Estudios\Cibertec\proyecto final\Pedidos\App.Pedidos.Repositories.Dapper\obj\Debug\App.Pedidos.Repositories.Dapper.csproj.CopyComplete
+C:\Users\jgutierrez\Documents\Estudios\Cibertec\proyecto final\Pedidos\App.Pedidos.Repositories.Dapper\obj\Debug\App.Pedidos.Repositories.Dapper.dll
+C:\Users\jgutierrez\Documents\Estudios\Cibertec\proyecto final\Pedidos\App.Pedidos.Repositories.Dapper\obj\Debug\App.Pedidos.Repositories.Dapper.pdb

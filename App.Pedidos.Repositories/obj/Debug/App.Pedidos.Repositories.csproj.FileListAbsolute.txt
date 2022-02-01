@@ -20,3 +20,16 @@ E:\Web\Pedidos\App.Pedidos.Repositories\obj\Debug\App.Pedidos.Repositories.cspro
 E:\Web\Pedidos\App.Pedidos.Repositories\obj\Debug\App.Pedidos.Repositories.csproj.CopyComplete
 E:\Web\Pedidos\App.Pedidos.Repositories\obj\Debug\App.Pedidos.Repositories.dll
 E:\Web\Pedidos\App.Pedidos.Repositories\obj\Debug\App.Pedidos.Repositories.pdb
+C:\Users\jgutierrez\Documents\Estudios\Cibertec\proyecto final\Pedidos\App.Pedidos.Repositories\bin\Debug\App.Pedidos.Repositories.dll
+C:\Users\jgutierrez\Documents\Estudios\Cibertec\proyecto final\Pedidos\App.Pedidos.Repositories\bin\Debug\App.Pedidos.Repositories.pdb
+C:\Users\jgutierrez\Documents\Estudios\Cibertec\proyecto final\Pedidos\App.Pedidos.Repositories\bin\Debug\App.Pedidos.Models.dll
+C:\Users\jgutierrez\Documents\Estudios\Cibertec\proyecto final\Pedidos\App.Pedidos.Repositories\bin\Debug\App.Pedidos.Models.pdb
+C:\Users\jgutierrez\Documents\Estudios\Cibertec\proyecto final\Pedidos\App.Pedidos.Repositories\obj\Debug\App.Pedidos.Repositories.csprojAssemblyReference.cache
+C:\Users\jgutierrez\Documents\Estudios\Cibertec\proyecto final\Pedidos\App.Pedidos.Repositories\obj\Debug\App.Pedidos.Repositories.csproj.CoreCompileInputs.cache
+C:\Users\jgutierrez\Documents\Estudios\Cibertec\proyecto final\Pedidos\App.Pedidos.Repositories\obj\Debug\App.Pedidos.Repositories.csproj.CopyComplete
+C:\Users\jgutierrez\Documents\Estudios\Cibertec\proyecto final\Pedidos\App.Pedidos.Repositories\obj\Debug\App.Pedidos.Repositories.dll
+C:\Users\jgutierrez\Documents\Estudios\Cibertec\proyecto final\Pedidos\App.Pedidos.Repositories\obj\Debug\App.Pedidos.Repositories.pdb
+C:\Users\jgutierrez\Documents\Estudios\Cibertec\proyecto final\Pedidos\App.Pedidos.Repositories\bin\Debug\Dapper.Contrib.dll
+C:\Users\jgutierrez\Documents\Estudios\Cibertec\proyecto final\Pedidos\App.Pedidos.Repositories\bin\Debug\Dapper.dll
+C:\Users\jgutierrez\Documents\Estudios\Cibertec\proyecto final\Pedidos\App.Pedidos.Repositories\bin\Debug\Dapper.Contrib.xml
+C:\Users\jgutierrez\Documents\Estudios\Cibertec\proyecto final\Pedidos\App.Pedidos.Repositories\bin\Debug\Dapper.xml
