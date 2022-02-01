@@ -1,0 +1,29 @@
+﻿@model IEnumerable<App.Pedidos.Models.CO_Clientes>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+@Messages.Message("createMessage", "New", "success", "El registro se creó satisfactoriamente")
+@Messages.Message("deleteMessage", "Delete", "danger", "El registro se eliminó satisfactoriamente")
+@Messages.Message("editMessage", "Edit", "primary", "El registro se editó satisfactoriamente")
+
+
+<p>
+    <a href="#" onclick="appPedidos.getModal('@Url.Action("Create")');" data-toggle="modal"
+       data-target="#modal-container" class="btn btn-success">
+        <span class="fa fa-plus"></span> Registrar
+    </a>
+</p>
+
+@Html.Partial("_List")
+
+@Modal.GetModal("Mantenimiento Cliente")
+
+<script src="~/Content/templates/default/vendor/datatables/jquery.dataTables.js"></script>
+<script src="~/Content/templates/default/vendor/datatables/dataTables.bootstrap4.js"></script>
+
+<script src="~/App_JS/appPedidos.js" type="text/javascript"></script>
+<script src="~/App_JS/cliente.js" type="text/javascript"></script>

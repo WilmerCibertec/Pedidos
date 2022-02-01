@@ -1,4 +1,6 @@
-﻿using System;
+﻿
+using Dapper.Contrib.Extensions;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
@@ -10,9 +12,9 @@ namespace App.Pedidos.Models
     //[Table("Clientes")]
     public class CO_Clientes
     {
-        //[Key]
-        //[DisplayName("Id")]
-        public int Id { get; set; }
+        [Key]
+        //[DisplayName("IdPersona")]
+        public int IdPersona { get; set; }
 
         public string Nombres { get; set; }
 

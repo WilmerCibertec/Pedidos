@@ -15,3 +15,14 @@ E:\Web\Pedidos\App.Pedidos.Models\obj\Debug\App.Pedidos.Models.csproj.CoreCompil
 E:\Web\Pedidos\App.Pedidos.Models\obj\Debug\App.Pedidos.Models.dll
 E:\Web\Pedidos\App.Pedidos.Models\obj\Debug\App.Pedidos.Models.pdb
 E:\Web\Pedidos\App.Pedidos.Models\obj\Debug\App.Pedidos.Models.csproj.AssemblyReference.cache
+C:\Users\jgutierrez\Documents\Estudios\Cibertec\proyecto final\Pedidos\App.Pedidos.Models\bin\Debug\App.Pedidos.Models.dll
+C:\Users\jgutierrez\Documents\Estudios\Cibertec\proyecto final\Pedidos\App.Pedidos.Models\bin\Debug\App.Pedidos.Models.pdb
+C:\Users\jgutierrez\Documents\Estudios\Cibertec\proyecto final\Pedidos\App.Pedidos.Models\obj\Debug\App.Pedidos.Models.csprojAssemblyReference.cache
+C:\Users\jgutierrez\Documents\Estudios\Cibertec\proyecto final\Pedidos\App.Pedidos.Models\obj\Debug\App.Pedidos.Models.csproj.CoreCompileInputs.cache
+C:\Users\jgutierrez\Documents\Estudios\Cibertec\proyecto final\Pedidos\App.Pedidos.Models\obj\Debug\App.Pedidos.Models.dll
+C:\Users\jgutierrez\Documents\Estudios\Cibertec\proyecto final\Pedidos\App.Pedidos.Models\obj\Debug\App.Pedidos.Models.pdb
+C:\Users\jgutierrez\Documents\Estudios\Cibertec\proyecto final\Pedidos\App.Pedidos.Models\bin\Debug\Dapper.Contrib.dll
+C:\Users\jgutierrez\Documents\Estudios\Cibertec\proyecto final\Pedidos\App.Pedidos.Models\bin\Debug\Dapper.dll
+C:\Users\jgutierrez\Documents\Estudios\Cibertec\proyecto final\Pedidos\App.Pedidos.Models\bin\Debug\Dapper.Contrib.xml
+C:\Users\jgutierrez\Documents\Estudios\Cibertec\proyecto final\Pedidos\App.Pedidos.Models\bin\Debug\Dapper.xml
+C:\Users\jgutierrez\Documents\Estudios\Cibertec\proyecto final\Pedidos\App.Pedidos.Models\obj\Debug\App.Pedidos.Models.csproj.CopyComplete

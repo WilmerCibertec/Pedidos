@@ -34,3 +34,22 @@ E:\Web\Pedidos\App.Pedidos.UnitOfWork\obj\Debug\App.Pedidos.UnitOfWork.dll
 E:\Web\Pedidos\App.Pedidos.UnitOfWork\obj\Debug\App.Pedidos.UnitOfWork.pdb
 E:\Web\Pedidos\App.Pedidos.UnitOfWork\bin\Debug\App.Pedidos.Repositories.Dapper.dll.config
 E:\Web\Pedidos\App.Pedidos.UnitOfWork\bin\Debug\App.Pedidos.UnitOfWork.dll.config
+C:\Users\jgutierrez\Documents\Estudios\Cibertec\proyecto final\Pedidos\App.Pedidos.UnitOfWork\bin\Debug\App.Pedidos.UnitOfWork.dll.config
+C:\Users\jgutierrez\Documents\Estudios\Cibertec\proyecto final\Pedidos\App.Pedidos.UnitOfWork\bin\Debug\App.Pedidos.UnitOfWork.dll
+C:\Users\jgutierrez\Documents\Estudios\Cibertec\proyecto final\Pedidos\App.Pedidos.UnitOfWork\bin\Debug\App.Pedidos.UnitOfWork.pdb
+C:\Users\jgutierrez\Documents\Estudios\Cibertec\proyecto final\Pedidos\App.Pedidos.UnitOfWork\bin\Debug\App.Pedidos.Repositories.Dapper.dll
+C:\Users\jgutierrez\Documents\Estudios\Cibertec\proyecto final\Pedidos\App.Pedidos.UnitOfWork\bin\Debug\App.Pedidos.Repositories.dll
+C:\Users\jgutierrez\Documents\Estudios\Cibertec\proyecto final\Pedidos\App.Pedidos.UnitOfWork\bin\Debug\App.Pedidos.Models.dll
+C:\Users\jgutierrez\Documents\Estudios\Cibertec\proyecto final\Pedidos\App.Pedidos.UnitOfWork\bin\Debug\Dapper.dll
+C:\Users\jgutierrez\Documents\Estudios\Cibertec\proyecto final\Pedidos\App.Pedidos.UnitOfWork\bin\Debug\Dapper.Contrib.dll
+C:\Users\jgutierrez\Documents\Estudios\Cibertec\proyecto final\Pedidos\App.Pedidos.UnitOfWork\bin\Debug\App.Pedidos.Repositories.Dapper.pdb
+C:\Users\jgutierrez\Documents\Estudios\Cibertec\proyecto final\Pedidos\App.Pedidos.UnitOfWork\bin\Debug\App.Pedidos.Repositories.Dapper.dll.config
+C:\Users\jgutierrez\Documents\Estudios\Cibertec\proyecto final\Pedidos\App.Pedidos.UnitOfWork\bin\Debug\App.Pedidos.Repositories.pdb
+C:\Users\jgutierrez\Documents\Estudios\Cibertec\proyecto final\Pedidos\App.Pedidos.UnitOfWork\bin\Debug\App.Pedidos.Models.pdb
+C:\Users\jgutierrez\Documents\Estudios\Cibertec\proyecto final\Pedidos\App.Pedidos.UnitOfWork\bin\Debug\Dapper.xml
+C:\Users\jgutierrez\Documents\Estudios\Cibertec\proyecto final\Pedidos\App.Pedidos.UnitOfWork\bin\Debug\Dapper.Contrib.xml
+C:\Users\jgutierrez\Documents\Estudios\Cibertec\proyecto final\Pedidos\App.Pedidos.UnitOfWork\obj\Debug\App.Pedidos.UnitOfWork.csprojAssemblyReference.cache
+C:\Users\jgutierrez\Documents\Estudios\Cibertec\proyecto final\Pedidos\App.Pedidos.UnitOfWork\obj\Debug\App.Pedidos.UnitOfWork.csproj.CoreCompileInputs.cache
+C:\Users\jgutierrez\Documents\Estudios\Cibertec\proyecto final\Pedidos\App.Pedidos.UnitOfWork\obj\Debug\App.Pedidos.UnitOfWork.csproj.CopyComplete
+C:\Users\jgutierrez\Documents\Estudios\Cibertec\proyecto final\Pedidos\App.Pedidos.UnitOfWork\obj\Debug\App.Pedidos.UnitOfWork.dll
+C:\Users\jgutierrez\Documents\Estudios\Cibertec\proyecto final\Pedidos\App.Pedidos.UnitOfWork\obj\Debug\App.Pedidos.UnitOfWork.pdb
