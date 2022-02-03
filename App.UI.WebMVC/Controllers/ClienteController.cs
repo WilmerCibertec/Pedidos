@@ -63,7 +63,7 @@ namespace App.UI.WebMVC.Controllers
         [HttpGet]
         public async Task<ActionResult> Edit(int id)
         {
-            return View(await _unit.Clientes.Obtener(id));
+            return PartialView("_Edit", await _unit.Clientes.Obtener(id));
         }
 
         // POST: Cliente/Edit/5
@@ -90,7 +90,7 @@ namespace App.UI.WebMVC.Controllers
         [HttpGet]
         public async Task<ActionResult> Delete(int id)
         {
-            return View(await _unit.Clientes.Obtener(id));
+            return PartialView("_Delete",await _unit.Clientes.Obtener(id));
         }
 
         // POST: Cliente/Delete/5

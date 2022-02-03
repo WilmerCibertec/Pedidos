@@ -5,34 +5,37 @@
         <thead>
             <tr>
                 <th>
-                    @Html.DisplayNameFor(model => model.Nombres)
+                    Código
                 </th>
                 <th>
-                    @Html.DisplayNameFor(model => model.Apellidos)
+                    Nombres
                 </th>
                 <th>
-                    @Html.DisplayNameFor(model => model.Documento)
+                    Apellidos
                 </th>
                 <th>
-                    @Html.DisplayNameFor(model => model.Direccion)
+                    Nro. Documento
                 </th>
                 <th>
-                    @Html.DisplayNameFor(model => model.Distrito)
+                    Dirección
                 </th>
                 <th>
-                    @Html.DisplayNameFor(model => model.Provincia)
+                   Distrito
                 </th>
                 <th>
-                    @Html.DisplayNameFor(model => model.Telefono)
+                    Provincia
                 </th>
                 <th>
-                    @Html.DisplayNameFor(model => model.Estado)
+                    Teléfono
                 </th>
                 <th>
-                    @Html.DisplayNameFor(model => model.FechaCreacion)
+                    Estado
                 </th>
                 <th>
-                    @Html.DisplayNameFor(model => model.FechaActualizacion)
+                    Fec. Creación
+                </th>
+                <th>
+                    Fec. Actualización
                 </th>
                 <th></th>
             </tr>
@@ -77,15 +80,15 @@
                     <td>
                         <a href="#" onclick="appPedidos.getModal('@Url.Action("Edit", new { id = item.IdPersona })');" data-toggle="modal"
                            data-target="#modal-container" class="btn btn-warning">
-                            <span class="fa fa-edit"></span>
+                            <span class="fa fa-edit">Editar</span>
                         </a>
                         <a href="#" onclick="appPedidos.getModal('@Url.Action("Details", new { id = item.IdPersona })');" data-toggle="modal"
                            data-target="#modal-container" class="btn btn-warning">
-                            <span class="fa fa-edit"></span>
+                            <span class="fa fa-edit">Detalle</span>
                         </a>
                         <a href="#" onclick="appPedidos.getModal('@Url.Action("Delete", new { id = item.IdPersona })');" data-toggle="modal"
                            data-target="#modal-container" class="btn btn-warning">
-                            <span class="fa fa-edit"></span>
+                            <span class="fa fa-edit">Eliminar</span>
                         </a>
                         
                     </td>

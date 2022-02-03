@@ -2198,6 +2198,9 @@
     <Content Include="Views\Linea\Index.cshtml" />
     <Content Include="Views\Linea\_List.cshtml" />
     <Content Include="Views\Linea\_FiltrosBusqueda.cshtml" />
+    <Content Include="Views\Cliente\_Edit.cshtml" />
+    <Content Include="Views\Cliente\_Details.cshtml" />
+    <Content Include="Views\Cliente\_Delete.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -30,7 +30,7 @@ namespace App.Pedidos.Repositories.Dapper
             {
                 var parameters = new DynamicParameters();
                 parameters.Add("@id", id);
-                return connection.ExecuteAsync("update dbo.CO_Cliente " +
+                return connection.ExecuteAsync("update CO_Cliente " +
                                                 "set Estado = 0 " +
                                                 "where IdPersona = @id", parameters,
                                                 commandType: System.Data.CommandType.Text);
