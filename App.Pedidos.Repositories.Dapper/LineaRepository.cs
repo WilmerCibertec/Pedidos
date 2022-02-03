@@ -16,37 +16,55 @@ namespace App.Pedidos.Repositories.Dapper
         {
         }
 
-        public WH_ClaseLinea BuscarPorId(int id)
+        public async Task<int> AgregarLinea(WH_ClaseLinea entidad)
         {
             using (var connection = new SqlConnection(_connectionString))
             {
-                return connection.GetAll<WH_ClaseLinea>().Where(c => c.Id.Equals(id)).First();
+                var parameters = new DynamicParameters();
+                parameters.Add("@Descripcion", entidad.DescripcionLocal);
+                parameters.Add("@Estado", entidad.Estado);
+                return await connection.ExecuteAsync("[dbo].[sp_CrearLinea]", parameters,
+                                                commandType: System.Data.CommandType.StoredProcedure);
             }
         }
 
-        public Task<int> Eliminar(int id)
+        public async Task<int> ModificarLinea(WH_ClaseLinea entidad)
+        {
+            using (var connection = new SqlConnection(_connectionString))
+            {
+                var parameters = new DynamicParameters();
+                parameters.Add("@Descripcion", entidad.DescripcionLocal);
+                parameters.Add("@Estado", entidad.Estado);
+                parameters.Add("@Id", entidad.Linea);
+                return await connection.ExecuteAsync("[dbo].[sp_ModificarLinea]", parameters,
+                                                commandType: System.Data.CommandType.StoredProcedure);
+            }
+        }
+
+        public async Task<int> Eliminar(int id)
         {
             using (var connection = new SqlConnection(_connectionString))
             {
                 var parameters = new DynamicParameters();
                 parameters.Add("@id", id);
-                return connection.ExecuteAsync("update dbo.CO_ClaseLinea " +
+                return await connection.ExecuteAsync("update dbo.WH_ClaseLinea " +
                                                 "set Estado = 0 " +
                                                 "where Linea = @id", parameters,
                                                 commandType: System.Data.CommandType.Text);
             }
         }
 
-        public Task<IEnumerable<WH_ClaseLinea>> Listar(string Descripcion)
+        public async Task<IEnumerable<WH_ClaseLinea>> Listar(string Descripcion)
         {
             using (var connection = new SqlConnection(_connectionString))
             {
                 var parameters = new DynamicParameters();
                 parameters.Add("@descripcion", Descripcion);
-                return connection.QueryAsync<WH_ClaseLinea>("select Linea,DescripcionLocal,Estado from dbo.CO_ClaseLinea " +
+                return await connection.QueryAsync<WH_ClaseLinea>("select Linea,DescripcionLocal,Estado from dbo.WH_ClaseLinea " +
                                                         "where DescripcionLocal like '%@descripcion%'", parameters,
                                                         commandType: System.Data.CommandType.Text);
             }
         }
+
     }
 }

@@ -3,7 +3,7 @@
     initPaginacion();
 
     function successReload(option) {
-        appVentas.closeModal(option);
+        appPedidos.closeModal(option);
     }
 
     function initPaginacion() {

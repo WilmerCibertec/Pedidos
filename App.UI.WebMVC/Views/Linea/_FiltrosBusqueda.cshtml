@@ -1,0 +1,65 @@
+﻿<form>
+    <div class="row">
+        <div class="form-group col-sm-4">
+            <label >Descripcion:</label>
+            <input id="descripcionId" type="text" class="form-control" placeholder="Nombre de la Descripcion" />
+        </div>
+        <div class="form-group col-sm-4">
+            <label>Estado:</label>
+            <input id="estadoId" list="browsers" class="form-control" placeholder="Estado" />
+                <datalist id="browsers">
+                    <option  value="Activo" >
+                    <option  value="Inactivo" >
+                </datalist>
+        </div>
+        @*<div class="form-group col-sm-4">
+            <label>Rango de Fecha de Creación:</label>
+            <div class="input-group">
+                <div class="input-group-append">
+                    <span class="input-group-text">
+                        <i class="far fa-calendar-alt"></i>
+                    </span>
+                </div>
+                <input type="text" class="form-control float-right" id="CreationDate" />
+            </div>
+        </div>*@
+    </div>
+    <!--<div class="row">
+        <div class="form-group col-sm-4">
+            <label>Tipo Categoria (con ViewData):</label>
+            <select class="form-control" placeholder="Tipo Categoria">
+                <option>Todos</option>-->
+                @*@foreach (var item in ViewData["TipoCategorias"] as IList<App.Pedidos.Models.TipoCategoria>)
+                {
+                    <option>@item.Nombre</option>
+                }*@
+            <!--</select>
+        </div>
+        <div class="form-group col-sm-4">
+            <label>Tipo Categoria (con ViewBag):</label>
+            <select class="form-control" placeholder="Tipo Categoria">
+                <option>Todos</option>-->
+                @*@foreach (var item in ViewBag.TipoCategorias)
+                {
+                    <option>@item.Nombre</option>
+                }*@
+            <!--</select>
+        </div>
+    </div>-->
+</form>
+
+<div class="row">
+    <div class="col-sm-2">
+        <a href="#" class="btn btn-primary btn-execute-transactional" onclick="linea.searchByFilter()">
+            <span class="fa fa-search">&nbsp;&nbsp;Buscar Lineas</span>
+        </a>
+    </div>
+    <div class="col-sm-2">
+        <a href="#" onclick="appPedidos.getModal('@Url.Action("Create")');" data-toggle="modal"
+           data-target="#modal-container" class="btn btn-success">
+            <span class="fa fa-plus"></span>&nbsp;&nbsp;Crear Linea
+        </a>
+    </div>
+</div>
+<br />
+<hr />
