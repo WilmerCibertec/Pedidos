@@ -1,26 +1,28 @@
 ﻿@model IEnumerable<App.Pedidos.Models.WH_ClaseLinea>
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Mantenimiento de Linea";
 }
-
-<h2>Index</h2>
-
-<!--COMENTARIO CON HTML NATIVO-->
-@*COMENTARIO CON RAZOR*@
 
 @Messages.Message("createMessage", "New", "success", "El registro se creó satisfactoriamente")
 @Messages.Message("deleteMessage", "Delete", "danger", "El registro se eliminó satisfactoriamente")
 @Messages.Message("editMessage", "Edit", "primary", "El registro se editó satisfactoriamente")
 
-<p>
+@Html.Partial("_FiltrosBusqueda")
+
+<div id="lineaList">
+    @Html.Partial("_List")
+</div>
+
+
+@*<p>
     <a href="#" onclick="appPedidos.getModal('@Url.Action("Create")');" data-toggle="modal"
        data-target="#modal-container" class="btn btn-success">
         <span class="fa fa-plus"></span> Crear Linea
     </a>
-</p>
+</p>*@
 
-@Html.Partial("_List")
+@*@Html.Partial("_List")*@
 
 @Modal.GetModal("Mantenimiento de Linea")
 

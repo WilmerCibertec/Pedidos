@@ -9,8 +9,10 @@ namespace App.Pedidos.Repositories
 {
     public interface ILineaRepository:IRepository<WH_ClaseLinea>
     {
-        WH_ClaseLinea BuscarPorId(int id);
         Task<IEnumerable<WH_ClaseLinea>> Listar(string Descripcion);
         Task<int> Eliminar(int id);
+        Task<int> AgregarLinea(WH_ClaseLinea entidad);
+
+        Task<int> ModificarLinea(WH_ClaseLinea entidad);
     }
 }
