@@ -55,6 +55,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CO_Clientes.cs" />
+    <Compile Include="MensajeRetorno.cs" />
     <Compile Include="WH_ClaseFamilia.cs" />
     <Compile Include="WH_ClaseLinea.cs" />
     <Compile Include="CO_Pedido.cs" />

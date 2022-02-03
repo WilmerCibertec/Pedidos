@@ -10,7 +10,7 @@ using System.Web.Mvc;
 namespace App.UI.WebMVC.Controllers
 {
     [ErrorActionFilter]
-    //[Authorize]
+    [Authorize]
     public class BaseController : Controller
     {
         protected IUnitOfWork _unit;

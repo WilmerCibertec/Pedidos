@@ -80,7 +80,6 @@ namespace App.UI.WebMVC.Controllers
 
         // POST: Linea/Edit/5
         [HttpPost]
-        [ValidateAntiForgeryToken]
         public async Task<ActionResult> Edit(WH_ClaseLinea linea)
         {
             if (ModelState.IsValid)
@@ -126,5 +125,24 @@ namespace App.UI.WebMVC.Controllers
             return PartialView("_Details", await _unit.Lineas.Obtener(id));
         }
 
+        [Route("ListByFilters/{lineaId}/{lineaNombre}")]
+        public async Task<PartialViewResult> ListByFilters(string descripcionId, string estadoId)
+        {
+            List<WH_ClaseLinea> lstCategorias = new List<WH_ClaseLinea>();
+
+            if (!descripcionId.Equals("-"))
+            {
+                //var categoria = await _unit.Categorias.BuscarPorId(int.Parse(categoriaId));
+                var categoria = await _unit.Lineas.Obtener(int.Parse(descripcionId));
+                lstCategorias.Add(categoria);
+            }
+            else if (!estadoId.Equals("-"))
+            {
+                var resultado = await _unit.Lineas.Listar(estadoId);
+                lstCategorias = resultado.ToList();
+            }
+
+            return PartialView("_List", lstCategorias);
+        }
     }
 }

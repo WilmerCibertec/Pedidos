@@ -28,6 +28,12 @@
 
     <!--Unobtrusive-->
     <script src="~/Scripts/jquery.unobtrusive-ajax.js"></script>
+
+
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="~/Content/css/styles.css" rel="stylesheet" />
+
+
 </head>
 
 <body id="page-top">
@@ -35,7 +41,7 @@
     <!-- Page Wrapper -->
     <div id="wrapper">
 
-        @Html.Partial("_menuAdministrador")
+        @Html.Partial("_menu")
         <!-- Content Wrapper -->
         <div id="content-wrapper" class="d-flex flex-column">
 
@@ -96,8 +102,6 @@
         </div>
     </div>
 
-
-
     <!-- Core plugin JavaScript-->
     <script src="~/Content/templates/default/vendor/jquery-easing/jquery.easing.min.js"></script>
 
@@ -106,7 +110,6 @@
 
     <!-- Sweet Alert-->
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-
 
     @RenderSection("scripts", required: false)
 

@@ -7,3 +7,10 @@
         </div>
     </div>
 }
+
+@helper AlertMessages()
+{
+    @Messages.Message("createMessage", "New", "success", "El registro se creó satisfactoriamente")
+    @Messages.Message("deleteMessage", "Delete", "danger", "El registro se eliminó satisfactoriamente")
+    @Messages.Message("editMessage", "Edit", "primary", "El registro se editó satisfactoriamente")
+}

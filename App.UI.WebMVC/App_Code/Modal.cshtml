@@ -1,9 +1,7 @@
-﻿@helper GetModal(string title)
-{
-    <div class="modal fade" id="modal-container" tabindex="-1" aria-labelledby="myModalLabel"
-         role="dialog">
-
-        <div class="modal-dialog" role="document">
+﻿@helper GetModal(string title, string tamanio)
+{ 
+    <div class="modal fade" id="modal-container" tabindex="-1" aria-labelledby="myModalLabel" role="dialog">
+        <div id="modal-dialog-id" class="modal-dialog @tamanio modal-dialog-centered modal-dialog-scrollable" role="document">
             <div class="modal-content">
                 <div class="modal-header">
                     <h4 class="modal-title">@title</h4>
@@ -16,6 +14,5 @@
                 </div>
             </div>
         </div>
-
     </div>
 }

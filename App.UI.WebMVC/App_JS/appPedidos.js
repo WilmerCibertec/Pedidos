@@ -2,11 +2,17 @@
     appPedidos.getModal = getModalContent;
     appPedidos.closeModal = closeModal;
 
-    function getModalContent(url) {
+    function getModalContent(url, tamanio) {
         $.get(url, function (data) {
+            $('#modal-dialog-id').removeClass('modal-xl');
+            $('#modal-dialog-id').removeClass('modal-lg');
+            $('#modal-dialog-id').removeClass('modal-md');
+            $('#modal-dialog-id').removeClass('modal-sm');
+            $('#modal-dialog-id').addClass(tamanio);
             $('.modal-body').html(data);
         })
     }
+
     function closeModal(option) {
         $("button[data-dismiss='modal']").click();
         $('.modal-body').html('');
@@ -17,7 +23,7 @@
         //$("#createMessage").addClass('hidden');
         $("#createMessage").attr('hidden', 'hidden');
         //$("#editMessage").addClass('hidden');
-        $("#editMessage").attr('hidden', 'hidden');
+        $("#editMessage").attr('hidden','hidden');
         //$("#deleteMessage").addClass('hidden');
         $("#deleteMessage").attr('hidden', 'hidden');
 

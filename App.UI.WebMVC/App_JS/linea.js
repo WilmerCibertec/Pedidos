@@ -2,6 +2,7 @@
     linea.success = successReload;
     linea.searchByFilter = searchByFilter;
 
+    $("#CreationDate").daterangepicker();
     initPaginacion();
 
     function successReload(option) {
@@ -14,10 +15,10 @@
             "lengthChange": true,
             "searching": true,
             "ordering": true,
-            "autoWidth": false,
-            "responsive": false/*,
-            "buttons":["copy","csv","excel","pdf"]*/
-        });
+            "autoWidth": true,
+            "responsive": true,
+            "buttons": ["copy", "csv", "excel", "pdf"]
+        }).buttons().container().prependTo("#lineaTableContainer");
     }
 
     function searchByFilter() {

@@ -44,5 +44,6 @@ namespace App.Pedidos.Models
         //[DisplayName("Fecha Actualizacion")]
         //[Required]
         public DateTime? FechaActualizacion { get; set; }
+        public int Rol { get; set; }
     }
 }

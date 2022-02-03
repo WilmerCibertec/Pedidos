@@ -7,7 +7,7 @@ using System.Web.Mvc;
 
 namespace App.UI.WebMVC.Controllers
 {
-    //[AllowAnonymous]
+    [AllowAnonymous]
     public class HomeController : Controller
     {
         private IUnitOfWork _unit = new PedidosUnitOfWork("");

@@ -17,8 +17,8 @@ namespace App.UI.WebMVC
             app.UseCookieAuthentication(new CookieAuthenticationOptions
             {
                 AuthenticationType = "ApplicationCookie",
-                //LoginPath = new PathString("/Shared/_LayoutBackOffice.cshtml"),
-                //ExpireTimeSpan = TimeSpan.FromDays(30)/*,
+                LoginPath = new PathString("/Usuario/Login"),
+                ExpireTimeSpan = TimeSpan.FromDays(30)
                 //LogoutPath = new PathString("Home/Index")
             });
         }
