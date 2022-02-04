@@ -5,7 +5,9 @@
   background: #FFF;
   color: #024457;
   border-radius: 10px;
-  border: 1px solid #167F92; }
+  border: 1px solid #167F92;
+  padding:10px;
+}
   .table-responsive tr {
     border: 1px solid #D9E4E6; }
     .table-responsive tr:nth-child(odd) {

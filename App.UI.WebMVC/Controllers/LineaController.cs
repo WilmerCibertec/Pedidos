@@ -16,9 +16,11 @@ using System.Web.Mvc;
 namespace App.UI.WebMVC.Controllers
 {
     [ErrorActionFilter]
-    //[RoutePrefix("Linea")]
+    
+    //[RoutePrefix("WH_ClaseLinea")]
     public class LineaController : BaseController
     {
+
         public LineaController(ILog log, IUnitOfWork unit) : base(log, unit)
         {
         }
@@ -40,6 +42,7 @@ namespace App.UI.WebMVC.Controllers
 
         // GET: Linea/Create
         [HttpGet]
+        //[ValidateAntiForgeryToken]
         public ActionResult Create()
         {
             return PartialView("_Create");
@@ -47,7 +50,7 @@ namespace App.UI.WebMVC.Controllers
 
         // POST: Linea/Create
         [HttpPost]
-        [ValidateAntiForgeryToken]
+        //[ValidateAntiForgeryToken]
         public async Task<ActionResult> Create(WH_ClaseLinea entidad)
         {
 

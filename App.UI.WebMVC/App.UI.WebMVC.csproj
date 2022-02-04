@@ -198,6 +198,7 @@
     <Content Include="Content\images\bg.jpg" />
     <Content Include="Content\images\cibertec_-_logo.jpg" />
     <Content Include="Content\images\intro.jpg" />
+    <Content Include="Content\images\postres.jpg" />
     <Content Include="Content\images\products-01.jpg" />
     <Content Include="Content\images\products-02.jpg" />
     <Content Include="Content\images\products-03.jpg" />
@@ -2208,14 +2209,11 @@
     <Content Include="Views\Linea\Index.cshtml" />
     <Content Include="Views\Linea\_List.cshtml" />
     <Content Include="Views\Linea\_FiltrosBusqueda.cshtml" />
-<<<<<<< HEAD
     <Content Include="Views\Usuario\Login.cshtml" />
     <Content Include="Views\Usuario\Index.cshtml" />
-=======
     <Content Include="Views\Cliente\_Edit.cshtml" />
     <Content Include="Views\Cliente\_Details.cshtml" />
     <Content Include="Views\Cliente\_Delete.cshtml" />
->>>>>>> origin/jairo
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
