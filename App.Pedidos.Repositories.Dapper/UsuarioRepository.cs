@@ -24,7 +24,8 @@ namespace App.Pedidos.Repositories.Dapper
                 var parameters = new DynamicParameters();
                 parameters.Add("@id", id);
 
-                var user =  await connection.QueryFirstOrDefaultAsync<WB_Usuario>("Select IdUsuario,Email,TipoUsuario,IdCLiente,Estado "+
+                var user =  await connection.QueryFirstOrDefaultAsync<WB_Usuario>("Select IdUsuario,Email,TipoUsuario,Estado,IdCLiente" +
+                    ",Estado,FechaCreacion, FechaActualizacion,Rol " +
                     "from dbo.WB_Usuario where IdUsuario = @id",
                     parameters, commandType: System.Data.CommandType.Text);
 
@@ -119,6 +120,7 @@ namespace App.Pedidos.Repositories.Dapper
                 var parameters = new DynamicParameters();
                 parameters.Add("@id", entidad.IdUsuario);
                 parameters.Add("@email",  entidad.Email);
+                parameters.Add("@rol", entidad.TipoUsuario);
                 parameters.Add("@estado", entidad.Estado);
 
                 var user = await connection.ExecuteAsync("dbo.sp_ActualizarUsuario",
