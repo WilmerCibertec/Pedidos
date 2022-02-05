@@ -15,12 +15,12 @@ namespace App.Pedidos.Models
         [DisplayName("CODIGO")]
         public int Linea { get; set; }
 
+        [Required(ErrorMessage = "Se debe ingresar valor")]
         [DisplayName("DESCRIPCION")]
-        //[Required(ErrorMessage = "Ingresar valor")]
-        //[DataType(DataType.Text, ErrorMessage = "Ingresar valor de tipo texto.")]
         public string DescripcionLocal { get; set; }
 
-        //[DisplayName("ESTADO")]
-        public bool? Estado { get; set; }
+        [DisplayName("ESTADO")]
+        [Required(ErrorMessage = "Elegir estado")]
+        public bool Estado { get; set; }
     }
 }

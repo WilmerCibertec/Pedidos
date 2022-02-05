@@ -7,6 +7,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using App.Pedidos.Models.DTO;
 
 namespace App.Pedidos.Repositories.Dapper
 {
@@ -16,11 +17,18 @@ namespace App.Pedidos.Repositories.Dapper
         {
         }
 
-        public WB_Usuario BuscarPorId(int id)
+        public async Task<WB_Usuario> BuscarPorId(int id)
         {
             using (var connection = new SqlConnection(_connectionString))
             {
-                return connection.GetAll<WB_Usuario>().Where(c => c.IdUsuario.Equals(id)).First();
+                var parameters = new DynamicParameters();
+                parameters.Add("@id", id);
+
+                var user =  await connection.QueryFirstOrDefaultAsync<WB_Usuario>("Select IdUsuario,Email,TipoUsuario,IdCLiente,Estado "+
+                    "from dbo.WB_Usuario where IdUsuario = @id",
+                    parameters, commandType: System.Data.CommandType.Text);
+
+                return user;
             }
         }
 
@@ -30,7 +38,7 @@ namespace App.Pedidos.Repositories.Dapper
             {
                 var parameters = new DynamicParameters();
                 parameters.Add("@nombres", nombres);
-                return await connection.QueryAsync<WB_Usuario>("select IdUsuario, UserName, [Password],Email,TipoUsuario,FechaCreacion from dbo.WB_Usuario " +
+                return await connection.QueryAsync<WB_Usuario>("select IdUsuario, [Password],Email,TipoUsuario,FechaCreacion from dbo.WB_Usuario " +
                                                         "where UserName like '%@nombres%'", parameters,
                                                         commandType: System.Data.CommandType.Text);
             }
@@ -64,25 +72,59 @@ namespace App.Pedidos.Repositories.Dapper
             }
         }
 
-        public async Task<MensajeRetorno> CrearUsuario(WB_Usuario usuario)
+        public async Task<MensajeRetorno> CrearUsuario(UsuarioD usuario)
         {
             using (var connection = new SqlConnection(_connectionString))
             {
                 string message = "";
                 var parameters = new DynamicParameters();
-                parameters.Add("@UseName", usuario.UsarName);
+                parameters.Add("@Nombre", usuario.Nombres);
+                parameters.Add("@Apellido", usuario.Apellidos);
+                parameters.Add("@Documento", usuario.Documento);
+                parameters.Add("@Direccion", usuario.Direccion);
+                parameters.Add("@Distrito", usuario.Distrito);
+                parameters.Add("@Provincia", usuario.Provincia);
+                parameters.Add("@Telefono", usuario.Telefono);
                 parameters.Add("@Email", usuario.Email);
                 parameters.Add("@Password", usuario.Password);
-                parameters.Add("OV_message_error", message, System.Data.DbType.String,
+                parameters.Add("@Error", message, System.Data.DbType.String,
                     System.Data.ParameterDirection.Output);
 
-                var usuarioCreado = await connection.QueryFirstOrDefaultAsync<WB_Usuario>("dbo.uspCrearUsuario",
+                var usuarioCreado = await connection.QueryFirstOrDefaultAsync<UsuarioD>("[dbo].[sp_CrearUsuarioWeb]",
                     parameters, commandType: System.Data.CommandType.StoredProcedure);
 
-                message = parameters.Get<string>("@OV_message_error");
+                message = parameters.Get<string>("@Error");
 
                 //return usuarioCreado;
                 return new MensajeRetorno { Objeto = usuarioCreado, Mensaje = message };
+            }
+        }
+
+        public async Task<IEnumerable<WB_Usuario>> ListarIndice()
+        {
+            using (var connection = new SqlConnection(_connectionString))
+            {
+
+                var user = await connection.QueryAsync<WB_Usuario>("dbo.sp_ListarUsuarios",
+                     commandType: System.Data.CommandType.StoredProcedure);
+
+                return user;
+            }
+        }
+
+        public async Task<int> ModificarUsuario(WB_Usuario entidad)
+        {
+            using (var connection = new SqlConnection(_connectionString))
+            {
+                var parameters = new DynamicParameters();
+                parameters.Add("@id", entidad.IdUsuario);
+                parameters.Add("@email",  entidad.Email);
+                parameters.Add("@estado", entidad.Estado);
+
+                var user = await connection.ExecuteAsync("dbo.sp_ActualizarUsuario",
+                    parameters, commandType: System.Data.CommandType.StoredProcedure);
+
+                return user;
             }
         }
     }

@@ -1,5 +1,7 @@
 ﻿using App.Pedidos.Models;
+using App.Pedidos.Models.DTO;
 using App.Pedidos.UnitOfWork;
+using App.UI.WebMVC.ActionFilters;
 using App.UI.WebMVC.Models;
 using log4net;
 using System;
@@ -12,6 +14,7 @@ using System.Web.Mvc;
 
 namespace App.UI.WebMVC.Controllers
 {
+    [ErrorActionFilter]
     public class UsuarioController : BaseController
     {
         public UsuarioController(ILog log, IUnitOfWork unit) : base(log, unit)
@@ -19,16 +22,18 @@ namespace App.UI.WebMVC.Controllers
         }
 
         // GET: Usuario
+
         public async Task<ActionResult> Index()
         {
             //User.Identity.
-            var lista = await _unit.Usuarios.Listar();
+            _log.Info("Ejecucion del Controlador Usuario - Index -> OK");
+            var lista = await _unit.Usuarios.ListarIndice();
             return View(lista);
         }
 
         public async Task<ActionResult> Details(int id)
         {
-            return View(await _unit.Usuarios.Obtener(id));
+            return View(await _unit.Usuarios.BuscarPorId(id));
         }
 
         [HttpGet]
@@ -40,14 +45,12 @@ namespace App.UI.WebMVC.Controllers
 
         [HttpPost]
         [AllowAnonymous]
-        public async Task<ActionResult> Create(WB_Usuario usuario)
+        public async Task<ActionResult> Create(UsuarioD usuario)
         {
             try
             {
-                // TODO: Add insert logic here
                 if (ModelState.IsValid)
                 {
-                    //await _unit.Usuarios.Agregar(usuario);
                     var mensajeRetorno = await _unit.Usuarios.CrearUsuario(usuario);
                     if (mensajeRetorno.Objeto != null) return RedirectToAction("Index", "Home");
                     else
@@ -65,34 +68,32 @@ namespace App.UI.WebMVC.Controllers
         }
 
         // GET: Usuario/Edit/5
+        [HttpGet]
         public async Task<ActionResult> Edit(int id)
         {
-            return View(await _unit.Usuarios.Obtener(id));
+           
+            return PartialView("Edit", await _unit.Usuarios.BuscarPorId(id));
         }
 
         // POST: Usuario/Edit/5
         [HttpPost]
         public async Task<ActionResult> Edit(WB_Usuario usuario)
         {
-            try
-            {
-                if (ModelState.IsValid)
-                {
-                    await _unit.Usuarios.Modificar(usuario);
+
+                //if (ModelState.IsValid)
+                //{
+                    await _unit.Usuarios.ModificarUsuario(usuario);
                     return RedirectToAction("Index");
-                }
-                return View(usuario);
-            }
-            catch
-            {
-                return View();
-            }
+                //}
+                //return View(usuario);
+
         }
-
-
-        public ActionResult Delete(int id)
+        [HttpGet]
+        //[ValidateAntiForgeryToken]
+        public async Task<ActionResult> Delete(int id)
         {
-            return View();
+            //return View(await _unit.Categorias.Obtener(id));
+            return PartialView("Delete", await _unit.Usuarios.BuscarPorId(id));
         }
 
         // POST: Usuario/Delete/5
@@ -124,14 +125,10 @@ namespace App.UI.WebMVC.Controllers
         public async Task<ActionResult> Login(UserViewModel user)
         {
             if (!ModelState.IsValid) return View(user);
-            /*
-            Usuario usuario = new Usuario
-            {
-                Email = user.Email,
-                Password = user.Password
-            };
-            */
-            WB_Usuario usuarioValido = await _unit.Usuarios.ValidarUsuario(/*usuario*/ user.Email, user.Password);
+
+            var usuarioValido = await _unit.Usuarios.ValidarUsuario(/*usuario*/ user.Email, user.Password);
+
+            //var cliente = await _unit.Clientes.BuscarId(usuarioValido.IdCliente);
 
             if (usuarioValido == null)
             {
@@ -143,8 +140,8 @@ namespace App.UI.WebMVC.Controllers
             {
                 new Claim(ClaimTypes.Email, usuarioValido.Email),
                 new Claim(ClaimTypes.Role, usuarioValido.Rol.ToString()),
-                //new Claim(ClaimTypes.Name, $"{usuarioValido.Nombres} {usuarioValido.Apellidos}"),
-                //new Claim(ClaimTypes.NameIdentifier, usuarioValido.Id.ToString())
+                //new Claim(ClaimTypes.Name, $"{cliente.Nombres} {cliente.Apellidos}"),
+                //new Claim(ClaimTypes.NameIdentifier, usuarioValido.IdUsuario.ToString())
             }, "ApplicationCookie");
 
             var context = Request.GetOwinContext();
@@ -173,5 +170,28 @@ namespace App.UI.WebMVC.Controllers
             }
             return RedirectToAction("Index", "Home");
         }
+
+
+        [Route("ListByFilters/{correoID}")]
+        public async Task<PartialViewResult> ListByFilters(string correoID)
+        {
+            List<WB_Usuario> lstUsuarios = new List<WB_Usuario>();
+
+            if (!correoID.Equals("-"))
+            {
+                //var categoria = await _unit.Categorias.BuscarPorId(int.Parse(categoriaId));
+                var usuario = await _unit.Usuarios.Obtener(int.Parse(correoID));
+                lstUsuarios.Add(usuario);
+            }
+            else
+            {
+                var resultado = await _unit.Usuarios.Listar();
+                lstUsuarios = resultado.ToList();
+            }
+            return PartialView("_List", lstUsuarios);
+        }
+        
+
+    
     }
 }

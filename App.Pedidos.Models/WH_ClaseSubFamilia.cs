@@ -1,6 +1,8 @@
-﻿using System;
+﻿using Dapper.Contrib.Extensions;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,20 +13,24 @@ namespace App.Pedidos.Models
     public class WH_ClaseSubFamilia
     {
         //[ExplicitKey]
-        //[DisplayName("Linea")]
+        [DisplayName("LINEA")]
         public int IdLinea { get; set; }
 
         //[ExplicitKey]
-        //[DisplayName("Familia")]
+        [DisplayName("FAMILIA")]
         public int IdFamilia { get; set; }
 
         //[ExplicitKey]
-        //[DisplayName("SubFamilia")]
+        [DisplayName("SUB-FAMILIA")]
         public int IdSubFamilia { get; set; }
         
-        //[DisplayName("Descripcion")]
+        [DisplayName("DESCRIPCION")]
+        [Required(ErrorMessage = "Se debe ingresar valor")]
         public string DescripcionLocal { get; set; }
-        public bool? Estado { get; set; }
+
+        [DisplayName("ESTADO")]
+        [Required(ErrorMessage = "Elegir estado")]
+        public bool Estado { get; set; }
 
     }
 }

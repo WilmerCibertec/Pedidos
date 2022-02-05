@@ -1,0 +1,68 @@
+﻿<div class="card shadow mb-4">
+    <div class="card-header py-3">
+        <h6 class="m-0 font-weight-bold text-primary">DataTables Example</h6>
+    </div>
+    <div class="card-body">
+        <form>
+            <div class="row">
+                <div class="form-group col-sm-4">
+                    <label>Correo Electronico:</label>
+                    <input id="correoID" type="text" class="form-control" placeholder="Correo" />
+                </div>
+                @*<div class="form-group col-sm-4">
+                    <label>Email:</label>
+                    <input id="emailID" type="text" class="form-control" placeholder="Email" />
+                </div>*@
+                @*<div class="form-group col-sm-4">
+                    <label>Rango de Fecha de Creación:</label>
+                    <div class="input-group">
+                        <div class="input-group-append">
+                            <span class="input-group-text">
+                                <i class="far fa-calendar-alt"></i>
+                            </span>
+                        </div>
+                        <input id="CreationDate" type="text" class="form-control float-right" id="CreationDate" />
+                    </div>
+                </div>*@
+            </div>
+            @*<div class="row">
+                <div class="form-group col-sm-4">
+                    <label>Tipo Categoria (con ViewData):</label>
+                    <select id="TipoCategoriaViewData" class="form-control select2" placeholder="Tipo Categoria">
+                        <option value="0">Todos</option>
+                        @foreach (var item in ViewBag.ListaClientes as IList<App.Pedidos.Models.CO_Clientes>)
+                        {
+                            <option value="@item.IdPersona">@item.Documento</option>
+                        }
+                    </select>
+                </div>
+                <div class="form-group col-sm-4">
+                    <label>Tipo Categoria (con ViewBag):</label>
+                    <select id="TipoCategoriaViewBag" class="form-control select2" placeholder="Tipo Categoria" multiple>
+                        <option value="0">Todos</option>
+                        @foreach (var item in ViewBag.TipoCategorias)
+                        {
+                            <option value="@item.Id">@item.Nombre</option>
+                        }
+                    </select>
+                </div>
+            </div>*@
+        </form>
+
+        <div class="row">
+            <div class="col-sm-2">
+                <a href="#" class="btn btn-primary btn-execute-transactional" onclick="usuario.searchByFilter()">
+                    <span class="fa fa-search">&nbsp;&nbsp;Buscar Usuario</span>
+                </a>
+            </div>
+            <div class="col-sm-2">
+                <a href="#" onclick="appPedidos.getModal('@Url.Action("Create")','');" data-toggle="modal"
+                   data-target="#modal-container" class="btn btn-success">
+                    <span class="fa fa-plus"></span>&nbsp;&nbsp;Crear Usuario
+                </a>
+            </div>
+        </div>
+        <br />
+        <hr />
+    </div>
+</div>

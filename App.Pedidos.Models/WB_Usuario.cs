@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Dapper.Contrib.Extensions;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
@@ -10,39 +11,36 @@ namespace App.Pedidos.Models
 {
     public class WB_Usuario
     {
-        //[Key]
-        //[DisplayName("Codigo Usuario")]
+        [ExplicitKey]
+        [DisplayName("CODIGO")]
         public int IdUsuario { get; set; }
 
-        //[DisplayName("Usuario")]
-        //[Required]
-        public string UsarName { get; set; }
-
-        //[DisplayName("Contraseña")]
-        //[Required]
+        [DisplayName("CONTRASEÑA")]
+        [Required]
         public string Password { get; set; }
 
-        //[DisplayName("Correo Electronico")]
-        //[Required(ErrorMessage = "Indique la dirección de Email")]
-        //[DataType(DataType.EmailAddress,ErrorMessage = "Informe una dirección de Email")]
+        [DisplayName("CORREO ELECTRONICO")]
+        [Required(ErrorMessage = "Indique la dirección de Email")]
         public string Email { get; set; }
 
-        //[DisplayName("Tipo Usuario")]
-        //[Required]
+        [DisplayName("TIPO USUARIO")]
+        [Required]
         public int TipoUsuario { get; set; }
 
+        [DisplayName("ESTADO")]
+        [Required]
         public bool Estado { get; set; }
 
-        //[DisplayName("Codigo Cliente")]
-        //[Required]
+        [DisplayName("CODIGO CLIENTE")]
+        [Required]
         public int IdCliente { get; set; }
 
-        //[DisplayName("Fecha Creacion")]
-        //[Required]
+        [DisplayName("Fecha Creacion")]
+        [Required]
         public DateTime? FechaCreacion { get; set; }
 
-        //[DisplayName("Fecha Actualizacion")]
-        //[Required]
+        [DisplayName("Fecha Actualizacion")]
+        [Required]
         public DateTime? FechaActualizacion { get; set; }
         public int Rol { get; set; }
     }

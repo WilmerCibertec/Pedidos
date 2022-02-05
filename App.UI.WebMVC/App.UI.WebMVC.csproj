@@ -159,9 +159,12 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\BaseController.cs" />
     <Compile Include="Controllers\ClienteController.cs" />
+    <Compile Include="Controllers\FamiliaController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LineaController.cs" />
     <Compile Include="Controllers\PedidoController.cs" />
+    <Compile Include="Controllers\ProductoController.cs" />
+    <Compile Include="Controllers\SubFamiliaController.cs" />
     <Compile Include="Controllers\UsuarioController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -174,6 +177,7 @@
     <Content Include="App_JS\appPedidos.js" />
     <Content Include="App_JS\cliente.js" />
     <Content Include="App_JS\linea.js" />
+    <Content Include="App_JS\usuario.js" />
     <Content Include="Content\appjs\modelos\producto.js" />
     <Content Include="Content\appjs\paginas\venta\ventalib.js" />
     <Content Include="Content\audios\audio.mp3" />
@@ -2211,11 +2215,20 @@
     <Content Include="Views\Linea\_List.cshtml" />
     <Content Include="Views\Linea\_FiltrosBusqueda.cshtml" />
     <Content Include="Views\Usuario\Login.cshtml" />
-    <Content Include="Views\Usuario\Index.cshtml" />
     <Content Include="Views\Cliente\_Edit.cshtml" />
     <Content Include="Views\Cliente\_Details.cshtml" />
     <Content Include="Views\Cliente\_Delete.cshtml" />
     <Content Include="Views\Pedido\Index.cshtml" />
+    <Content Include="Views\Producto\Index.cshtml" />
+    <Content Include="Views\Familia\Index.cshtml" />
+    <Content Include="Views\SubFamilia\Index.cshtml" />
+    <Content Include="Views\Usuario\_List.cshtml" />
+    <Content Include="Views\Usuario\Index.cshtml" />
+    <Content Include="Views\Usuario\_FiltrosBusqueda.cshtml" />
+    <Content Include="Views\Usuario\Create.cshtml" />
+    <Content Include="Views\Usuario\Delete.cshtml" />
+    <Content Include="Views\Usuario\Edit.cshtml" />
+    <Content Include="Views\Usuario\Details.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

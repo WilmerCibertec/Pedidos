@@ -46,5 +46,32 @@ namespace App.Pedidos.Repositories.Dapper
                 return connection.QueryAsync<CO_Clientes>("dbo.usp_ListarClientes", parameters,commandType: System.Data.CommandType.StoredProcedure);
             }
         }
+
+        public Task<CO_Clientes> BuscarId(int id)
+        {
+            using (var connection = new SqlConnection(_connectionString))
+            {
+                var parameters = new DynamicParameters();
+                parameters.Add("@id", id);
+                var user =  connection.QueryFirstOrDefaultAsync<CO_Clientes>("Select IdPersona,Nombres,Apellidos,Documento "+
+                                                                                "from CO_Clientes where IdPersona = @id",
+                    parameters, commandType: System.Data.CommandType.Text);
+
+                return user;
+            }
+        }
+
+        public async Task<IEnumerable<CO_Clientes>> ListarClientes()
+        {
+            using (var connection = new SqlConnection(_connectionString))
+            {
+
+                var user = await connection.QueryAsync<CO_Clientes>("select IdPersona,Documento,Nombres,Apellidos" +
+                    "from CO_Clientes with(nolock) ",
+                     commandType: System.Data.CommandType.Text);
+
+                return user;
+            }
+        }
     }
 }

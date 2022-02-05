@@ -1,5 +1,5 @@
 ﻿@helper GetModal(string title, string tamanio)
-{ 
+{
     <div class="modal fade" id="modal-container" tabindex="-1" aria-labelledby="myModalLabel" role="dialog">
         <div id="modal-dialog-id" class="modal-dialog @tamanio modal-dialog-centered modal-dialog-scrollable" role="document">
             <div class="modal-content">
@@ -11,6 +11,46 @@
                 </div>
                 <div class="modal-body">
 
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+@helper GetModalToggle(string title, string tamanio1, string title2, string tamanio2)
+{
+    <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1" role="dialog">
+        <div id="modal-dialog-toggle1" class="modal-dialog @tamanio1 modal-dialog-centered modal-dialog-scrollable" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="exampleModalToggleLabel">@title</h4>
+                    <button id="closeModalToggle1" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="body-toggle1">
+
+                </div>
+                <div class="modal-footer">
+                    @*<button class="btn btn-primary" data-target="#exampleModalToggle2" data-toggle="modal" data-dismiss="modal">Open second modal</button>*@
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+        <div id="modal-dialog-toggle2" class="modal-dialog @tamanio2 modal-dialog-centered modal-dialog-scrollable" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="exampleModalToggleLabel">@title2</h4>
+                    <button id="closeModalToggle2" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="body-toggle2">
+
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary" @*data-target="#exampleModalToggle2"*@ data-toggle="modal" data-dismiss="modal">Regresar</button>
                 </div>
             </div>
         </div>

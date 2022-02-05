@@ -1,13 +1,19 @@
 ﻿@*@model IEnumerable<App.Ventas.Models.Menu>*@
 
-@if (Request.IsAuthenticated)
-{<!-- Sidebar -->
-    if (User.IsInRole("1")) //Administrador
+@if (User.IsInRole("1"))
+//(Request.IsAuthenticated)
+{
+    @Html.Partial("_menuAdministrador")
+    @*if (User.IsInRole("1"))
     {
         @Html.Partial("_menuAdministrador")
     }
-    else if (User.IsInRole("2")) //Vendedor
+    else //if (User.IsInRole("2"))
     {
         @Html.Partial("_menuVendedor")
-    }
+    }*@
+}
+else
+{
+    @Html.Partial("_menuVendedor")
 }

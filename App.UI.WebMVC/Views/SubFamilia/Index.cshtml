@@ -1,0 +1,57 @@
+﻿@model IEnumerable<App.Pedidos.Models.WH_ClaseSubFamilia>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.IdLinea)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IdFamilia)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IdSubFamilia)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DescripcionLocal)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Estado)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.IdLinea)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IdFamilia)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IdSubFamilia)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DescripcionLocal)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Estado)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+        </td>
+    </tr>
+}
+
+</table>

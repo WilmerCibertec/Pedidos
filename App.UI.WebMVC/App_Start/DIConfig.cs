@@ -35,7 +35,7 @@ namespace App.UI.WebMVC.App_Start
             DependencyResolver.SetResolver(new SimpleInjectorDependencyResolver(container));
         }
     }
-    public sealed class Log4NetAdapter<T> : LogImpl
+    public sealed class Log4NetAdapter<T>: LogImpl
     {
         public Log4NetAdapter() : base(LogManager.GetLogger(typeof(T)).Logger) { }
     }
